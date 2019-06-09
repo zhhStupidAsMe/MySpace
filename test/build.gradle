@@ -16,13 +16,13 @@ dependencies {
     compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: '8.5.23'
     compile(project(':framework'))
 }
-jar{
-    manifest{
-        attributes "Main-Class":"com.zhh.zbs.Application"
+jar {
+    manifest {
+        attributes "Main-Class": "com.zhh.zbs.Application"
     }
-    from{
-        configurations.compile.collect{
-            it.isDirectory()?it:zipTree(it)
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
         }
     }
 }

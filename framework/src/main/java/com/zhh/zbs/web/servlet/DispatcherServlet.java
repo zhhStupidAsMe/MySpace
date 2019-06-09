@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * @ClassName TestServlet
- * @Description TODO
+ * @Description TODO 中央控制器
  * @Author Zhang Haohan
  * @Date 2019/6/8 0008 13:38
  * @Version 1.0
@@ -25,6 +25,13 @@ public class DispatcherServlet implements Servlet {
         return null;
     }
 
+    /**
+     * @return void
+     * @Author Zhang Haohan
+     * @Description //TODO 处理客户端请求
+     * @Date 12:26 2019/6/9 0009
+     * @Param [request, response]
+     **/
     @Override
     public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
         for (MappingHandler mappingHandler : HandlerManager.mappingHandlerList) {

@@ -4,7 +4,7 @@ import com.zhh.zbs.starter.MiniApplication;
 
 /**
  * @ClassName Application
- * @Description TODO
+ * @Description 启动类
  * @Author Zhang Haohan
  * @Date 2019/6/8 0008 12:46
  * @Version 1.0
